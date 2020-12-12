@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "cumples-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/cumples/CumplesWebPart.js",
+          "manifest": "./src/webparts/cumples/CumplesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CumplesWebPartStrings": "lib/webparts/cumples/loc/{locale}.js"
+  }
+}

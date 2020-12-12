@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "directorio-telefonico-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/directorioTelefonico/DirectorioTelefonicoWebPart.js",
+          "manifest": "./src/webparts/directorioTelefonico/DirectorioTelefonicoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DirectorioTelefonicoWebPartStrings": "lib/webparts/directorioTelefonico/loc/{locale}.js"
+  }
+}

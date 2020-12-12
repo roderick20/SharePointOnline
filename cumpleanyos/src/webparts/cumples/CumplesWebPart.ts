@@ -23,100 +23,135 @@ export default class CumplesWebPart extends BaseClientSideWebPart<ICumplesWebPar
 
   public render(): void {
     this.domElement.innerHTML = `
-    <div class="container">
-    <!-- contacts card -->
-    <div class="card card-default" id="card_contacts">
-        <div id="contacts" class="panel-collapse collapse show" aria-expanded="true" style="">
-            <ul class="list-group pull-down" id="contact-list">
-                <li class="list-group-item">
-                    <div class="row w-100">
-                        <div class="col-12 col-sm-6 col-md-3 px-0">
-                            <img src="http://demos.themes.guide/bodeo/assets/images/users/m101.jpg" alt="Mike Anamendolla" class="rounded-circle mx-auto d-block img-fluid">
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
-                            <span class="fa fa-mobile fa-2x text-success float-right pulse" title="online now"></span>
-                            <label class="name lead">Mike Anamendolla</label>
-                            <br> 
-                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="5842 Hillcrest Rd"></span>
-                            <span class="text-muted">5842 Hillcrest Rd</span>
-                            <br>
-                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(870) 288-4149"></span>
-                            <span class="text-muted small">(870) 288-4149</span>
-                            <br>
-                            <span class="fa fa-envelope fa-fw text-muted" data-toggle="tooltip" data-original-title="" title=""></span>
-                            <span class="text-muted small text-truncate">mike.ana@example.com</span>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="row w-100">
-                        <div class="col-12 col-sm-6 col-md-3 px-0">
-                            <img src="http://demos.themes.guide/bodeo/assets/images/users/m105.jpg" alt="Seth Frazier" class="img-fluid rounded-circle d-block mx-auto">
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
-                            <span class="name lead">Seth Frazier</span>
-                            <br>
-                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="7396 E North St"></span>
-                            <span class="text-muted">7396 E North St</span>
-                            <br>
-                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(560) 180-4143"></span>
-                            <span class="text-muted small">(560) 180-4143</span>
-                            <br>
-                            <span class="fa fa-envelope fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="seth.frazier@example.com"></span>
-                            <span class="text-muted small text-truncate">seth.frazier@example.com</span>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="row w-100">
-                        <div class="col-12 col-sm-6 col-md-3 px-0">
-                            <img src="http://demos.themes.guide/bodeo/assets/images/users/w102.jpg" alt="Rosemary Porter" class="img-fluid rounded-circle d-block mx-auto">
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
-                            <span class="fa fa-envelope fa-lg text-danger float-right" title="left you a message"></span>
-                            <span class="name lead">Rosemary Porter</span>
-                            <br> <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="5267 Cackson St"></span>
-                            <span class="text-muted">5267 Cackson St</span>
-                            <br>
-                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(497) 160-9776"></span>
-                            <span class="text-muted small">(497) 160-9776</span>
-                            <br>
-                            <span class="fa fa-envelope fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="rosemary.porter@example.com"></span>
-                            <span class="text-muted small text-truncate">rosemary.porter@example.com</span>
-                            <br>
-
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="row w-100">
-                        <div class="col-12 col-sm-6 col-md-3 px-0">
-                            <img src="http://demos.themes.guide/bodeo/assets/images/users/w104.jpg" alt="Debbie Schmidt" class="img-fluid rounded-circle d-block mx-auto">
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
-                            <label class="name lead">Debbie Schmidt</label>
-                            <br>
-
-                            <span class="fa fa-fw fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="3903 W Alexander Rd"></span>
-                            <span class="text-muted">3903 W Alexander Rd</span>
-                            <br>
-
-                            <span class="fa fa-fw fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(867) 322-1852"></span>
-                            <span class="text-muted small">(867) 322-1852</span>
-                            <br>
-
-                            <span class="fa fa-fw fa-envelope fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="debbie.schmidt@example.com"></span>
-                            <span class="text-muted small text-truncate">debbie.schmidt@example.com</span>
-
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <!--/contacts list-->
+    <style>
+    .card-box2 {
+        position: relative;
+        color: #fff;
+        padding: 20px 10px 40px;
+        margin: 1px 0px;
+    }
+    .card-box2:hover {
+        text-decoration: none;
+        color: #f1f1f1;
+    }
+    .card-box2:hover .icon i {
+        font-size: 50px;
+        transition: 1s;
+        -webkit-transition: 1s;
+    }
+    .card-box2 .inner2 {
+        padding: 5px 10px 0 10px;
+    }
+    .card-box2 h3 {
+        font-size: 27px;
+        font-weight: bold;
+        margin: 0 0 8px 0;
+        white-space: nowrap;
+        padding: 0;
+        text-align: left;
+    }
+    .card-box2 p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .card-box2 .icon2 {
+      position: absolute;
+      top: auto;
+      bottom: 5px;
+      right: 10px;
+      z-index: 0;
+      font-size: 35px;
+        color: rgba(0, 0, 0, 0.4);
+    }
+    .card-box2 .card-box-footer2 {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        text-align: center;
+        padding: 3px 0;
+        color: rgba(255, 255, 255, 0.8);
+        background: rgba(0, 0, 0, 0.1);
+        width: 100%;
+        text-decoration: none;
+    }
+    .card-box2:hover .card-box-footer2 {
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .bg-blue2 {
+        background-color: #132f40 !important;
+    }
+    .bg-yellow2 {
+        background-color: #e9c925 !important;
+    }
+   
+    </style>
+    <div class="row">
+    <div class="col-lg-12 col-sm-12" style="padding-right: 1px;padding-left: 1px;">
+    <div class="card-box2 bg-yellow2" style="padding-bottom: 10px;padding-top: 10px;">
+        <div class="inner2" style="color:#132f40;">                
+         
+            <p> Cumpleaños del mes</p>
         </div>
+        <div class="icon2" style="color:#132f40;">
+        <i class="fas fa-birthday-cake" aria-hidden="true"></i>
+        </div>
+        <!--a href="#" class="card-box-footer" style="color:#132f40;">Ver más <i class="fa fa-arrow-circle-right"></i></a-->
     </div>
 </div>
-      `;
+    </div>
+    <div class="row" id="CumplesDiv"  style="height: 600px; overflow-y: scroll;"></div>
+    
+  <style>
+  .card{
+    margin: 5px;
+  }
+  </style>
+    `;
+
+    (<any>$(document)).ready(function () {
+      $.ajax({
+        url: "/_api/web/lists/getbytitle('Personas')/items?$top=1000",
+        method: "GET",
+        headers: {
+          "Accept": "application/json; odata=verbose"
+        },
+        success: function (data) {
+
+          var today = new Date();
+          //var dd = (<any>String(today.getDate())).padStart(2, '0');
+          //var mm = (<any>String(today.getMonth() + 1)).padStart(2, '0'); //January is 0!
+          //var yyyy = today.getFullYear();
+
+          var mm = today.getMonth() + 1;
+          var dd = today.getDate();
+
+
+          $.each(data.d.results, function (key, value) {
+
+            var html = '<div class="col-sm-12">' +
+              '<div class="card">' +
+              '<div class="card-body">' +
+              '<div class="row">' +
+              '<div class="col-sm-4">' +
+              '<i class="fas fa-user-circle" style="font-size: 60px;"></i>' +
+              '</div>' +
+              '<div class="col-sm-8">' +
+              '<h5 class="card-title" style="font-size: 1rem;">' + value.NOMBRES + '</h5>' +
+              '<i class="fas fa-birthday-cake"></i> ' + value.DIA + ' / ' + value.MES + '' +
+              '</div>' +
+              '</div>' +
+              '</div>' +
+              '</div>' +
+              '</div>';
+
+              if( mm == parseInt(value.MES)){
+                (<any>$('#CumplesDiv')).append(html);
+              }
+
+          });
+        }
+      });
+    });
   }
 
   protected get dataVersion(): Version {

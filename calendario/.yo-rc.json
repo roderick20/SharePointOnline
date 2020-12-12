@@ -4,7 +4,7 @@
     "environment": "spo",
     "version": "1.11.0",
     "libraryName": "calendario",
-    "libraryId": "3c262819-bd6b-4fb9-9665-1f0ebe7c0b98",
+    "libraryId": "0ce63957-7cff-4359-b2dd-73bded8ec01f",
     "packageManager": "npm",
     "isDomainIsolated": true,
     "componentType": "webpart"

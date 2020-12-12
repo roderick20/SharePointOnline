@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "calendar-2-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/calendar2/Calendar2WebPart.js",
+          "manifest": "./src/webparts/calendar2/Calendar2WebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "Calendar2WebPartStrings": "lib/webparts/calendar2/loc/{locale}.js"
+  }
+}

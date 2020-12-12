@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "cumplenyos-mes-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/cumplenyosMes/CumplenyosMesWebPart.js",
+          "manifest": "./src/webparts/cumplenyosMes/CumplenyosMesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CumplenyosMesWebPartStrings": "lib/webparts/cumplenyosMes/loc/{locale}.js"
+  }
+}

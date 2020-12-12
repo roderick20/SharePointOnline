@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "0389f542-f092-49c3-afc8-dc7c2731c7c7",
+  "id": "cc7562c1-d0bf-4fa9-a52a-23c39352ddb1",
   "alias": "CalendarioWebPart",
   "componentType": "WebPart",
 

@@ -2,11 +2,11 @@
     "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
     "solution": {
         "name": "calendario-client-side-solution",
-        "id": "3c262819-bd6b-4fb9-9665-1f0ebe7c0b98",
-        "version": "1.0.0.6",
+        "id": "0ce63957-7cff-4359-b2dd-73bded8ec01f",
+        "version": "2.0.0.1",
         "includeClientSideAssets": true,
         "skipFeatureDeployment": true,
-        "isDomainIsolated": true,
+        "isDomainIsolated": false,
         "developer": {
             "name": "",
             "websiteUrl": "",
