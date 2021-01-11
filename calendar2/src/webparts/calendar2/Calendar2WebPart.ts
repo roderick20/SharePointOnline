@@ -99,7 +99,11 @@ export default class Calendar2WebPart extends BaseClientSideWebPart<ICalendar2We
     </div>
 </div>
   </div><br/>
+  <div class="row">
+  <div class="col-lg-12 col-sm-12" style="padding-right: 1px;padding-left: 1px;">
   <div id='calendar'></div>
+  </div>
+  </div>
     `;
 
     (<any>$(document)).ready(function () {
